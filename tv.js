@@ -1,6 +1,6 @@
 (function () {
-  var SELECTOR_SCREEN_ELEMENT = '.header_container';
-  var SELECTOR_SWITCHER_TV = '#header_power';
+  var SELECTOR_SCREEN_ELEMENT = '.screen';
+  var SELECTOR_SWITCHER_TV = '#switcher-tv';
 
   var isTurnedOn = true;
 
@@ -11,18 +11,21 @@
       paused: true
     });
 
-    timeline
-      .to(SELECTOR_SCREEN_ELEMENT, .2, {
+
+    timeline.
+      to(SELECTOR_SCREEN_ELEMENT, .2, {
         width: '100vw',
         height: '2px',
         background: '#ffffff',
         ease: Power2.easeOut
-      })
-      .to(SELECTOR_SCREEN_ELEMENT, .2, {
+      }).
+
+      to(SELECTOR_SCREEN_ELEMENT, .2, {
         width: '0',
         height: '0',
         background: '#ffffff'
       });
+
   }
 
   function toggleSwitcherTV() {

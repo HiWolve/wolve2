@@ -6,12 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="wolve2design.css">
-  <script src="tv.js"></script>
+  <link rel="stylesheet" href="powerOffdesign.css">
+
 
   <title>Document</title>
 </head>
 
 <body class="container">
+
+  <section class="screen">
+    <div class="content"></div>
+  </section>
+
+  <!-- <button id="switcher-tv">Turn on/off</button> -->
+  <input type="image" src="power.png" id="switcher-tv" />
+
+  <!-- <input id="switcher-tv" type="image" src="power.png" /> -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.6.1/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+  <script src="tv.js"></script>
 
 
   <div class="main_content">
@@ -21,7 +38,7 @@
 
 
     <!-- <a id="header_power" href="powerOff.html"><img src="power.png"></a> -->
-    <img id="header_power" src="power.png" alt="I/O">
+    <!-- <img id="header_power" src="power.png" alt="I/O"> -->
     <img id="header_nav" src="white-menu-icon-1.jpg" alt="Menu">
 
     <section class="header_container">
