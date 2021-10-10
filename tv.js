@@ -8,7 +8,7 @@
 
   function buildTimeline() {
     timeline = new TimelineMax({
-      paused: true
+      paused: false //change to true to have tv already on when website loads
     });
 
 
