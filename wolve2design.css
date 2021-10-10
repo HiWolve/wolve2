@@ -159,8 +159,14 @@ cursor: pointer;}
   }
 
   .first_section{
-    background-color: blue;
+    background-color: white;
     text-align: center;
+  }
+
+  #first_section_contained{
+    padding: 50px;
+    text-align: justify;
+    line-height: 2;
   }
 
   .second_section{
