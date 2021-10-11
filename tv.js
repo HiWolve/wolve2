@@ -35,8 +35,7 @@
   function toggleSwitcherTV() {
     if (isTurnedOn) {
       timeline.restart();
-      audio.pause();
-      audio.currentTime = 0;
+      audio.muted = true;
 
 
     }
@@ -44,6 +43,7 @@
     if (!isTurnedOn) {
       timeline.reverse();
       audio.loop = true;
+      audio.muted = false;
       audio.play();
 
 
