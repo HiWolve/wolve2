@@ -1,14 +1,18 @@
 (function () {
   var SELECTOR_SCREEN_ELEMENT = '.screen';
   var SELECTOR_SWITCHER_TV = '#switcher-tv';
+  var audio = new Audio("FlippingChannelsAudio.mp3");
+
 
   var isTurnedOn = true;
 
   var timeline;
 
+
+
   function buildTimeline() {
     timeline = new TimelineMax({
-      paused: false //change to true to have tv already on when website loads
+      paused: false  //change to true to have tv already on when website loads
     });
 
 
@@ -31,10 +35,18 @@
   function toggleSwitcherTV() {
     if (isTurnedOn) {
       timeline.restart();
+      audio.pause();
+      audio.currentTime = 0;
+
+
     }
 
     if (!isTurnedOn) {
       timeline.reverse();
+      audio.loop = true;
+      audio.play();
+
+
     }
 
     isTurnedOn = !isTurnedOn;
