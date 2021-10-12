@@ -9,6 +9,9 @@
 }
 
 .header_container{
+  display: black;
+
+
   width: 85%;
   height: 200px;
   background-color: black;
