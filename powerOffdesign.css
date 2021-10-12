@@ -37,18 +37,18 @@ h1 {
 .screen {
   background-color: black;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   width: 100vw;
-  height: 1000%;
-  /* transform: translate(-50%, -50%); */
+  height: 100%;
+  transform: translate(-50%, -50%);
   content: " ";
   overflow: hidden;
   background: #16222A;
   background: -webkit-linear-gradient(to left, #16222A, #3A6073);
   background: linear-gradient(to left, #16222A, #3A6073);
-  background-size: contain;
-  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url(FlippingChannels.gif);
 
   /* background-image: url(https://cldup.com/gn3s3Fg75t.gif); */
